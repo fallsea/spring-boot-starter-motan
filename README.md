@@ -1,4 +1,4 @@
-# spring boot motan 整合示例
+# spring boot motan 使用示例
 > motan基于spring boot 整合demo，motan配置信息存放在application.yml中，详细配置请参考[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
 
 > 此demo基于zookeeper 注册中心，如果要直接启动，需要安装zookeeper，也可以使用其他注册中心
