@@ -26,9 +26,9 @@ public class MotanConfig
      * @return
      */
     @Bean
+    @ConfigurationProperties(prefix = "fallsea.motan.annotation")
     public AnnotationBean motanAnnotationBean() {
         AnnotationBean motanAnnotationBean = new AnnotationBean();
-        motanAnnotationBean.setPackage("com.fallsea.motan");
         return motanAnnotationBean;
     }
     

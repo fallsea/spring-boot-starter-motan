@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>fallsea</groupId>
-  <artifactId>fallsea-motan-client</artifactId>
+  <artifactId>fallsea-motan-api-demo</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   
@@ -14,49 +14,14 @@
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
-		<motan.version>0.3.1</motan.version>
 	</properties>
 
     <dependencies>
-        <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-		<dependency>  
-		    <groupId>org.springframework.boot</groupId>  
-		    <artifactId>spring-boot-configuration-processor</artifactId>  
-		    <optional>true</optional>  
-		</dependency>
-		<dependency>
-		     <groupId>com.weibo</groupId>
-		     <artifactId>motan-core</artifactId>
-		     <version>${motan.version}</version>
-		 </dependency>
-		 <dependency>
-		     <groupId>com.weibo</groupId>
-		     <artifactId>motan-transport-netty</artifactId>
-		     <version>${motan.version}</version>
-		 </dependency>
-		 
-		 <dependency>
-		     <groupId>com.weibo</groupId>
-		     <artifactId>motan-springsupport</artifactId>
-		     <version>${motan.version}</version>
-		 </dependency>
-		 
-		 <dependency>
-		     <groupId>com.weibo</groupId>
-		     <artifactId>motan-registry-zookeeper</artifactId>
-		     <version>${motan.version}</version>
-		 </dependency>
-		 
     </dependencies>
 
 
-    <!--maven的插件-->
     <build>
         <plugins>
-			<!-- 生成HTML文件插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
@@ -74,7 +39,6 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
-			<!-- 资源文件管理插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -82,7 +46,6 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
-			<!-- 测试插件(surefire) -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -92,7 +55,6 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
-			<!-- 生成源码插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>

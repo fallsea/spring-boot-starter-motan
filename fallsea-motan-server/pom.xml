@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fallsea</groupId>
   <artifactId>fallsea-motan-server</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   
    <parent>
@@ -14,35 +14,41 @@
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
+		<motan.version>0.3.1</motan.version>
 	</properties>
 
     <dependencies>
-    	 <dependency>
-			<groupId>fallsea</groupId>
-			<artifactId>fallsea-motan-api</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
+    	<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-			<exclusions>
-	            <exclusion>
-	                <groupId>org.springframework.boot</groupId>
-	                <artifactId>spring-boot-starter-logging</artifactId>
-	            </exclusion>
-	        </exclusions>
 		</dependency>
-		<!-- 引入log4j依赖 --> 
+		<dependency>  
+		    <groupId>org.springframework.boot</groupId>  
+		    <artifactId>spring-boot-configuration-processor</artifactId>  
+		    <optional>true</optional>  
+		</dependency>
 		<dependency>
-		    <groupId>org.springframework.boot</groupId>
-		    <artifactId>spring-boot-starter-log4j</artifactId>
-		    <version>1.3.8.RELEASE</version>
-		</dependency>
-	    <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
+		     <groupId>com.weibo</groupId>
+		     <artifactId>motan-core</artifactId>
+		     <version>${motan.version}</version>
+		 </dependency>
+		 <dependency>
+		     <groupId>com.weibo</groupId>
+		     <artifactId>motan-transport-netty</artifactId>
+		     <version>${motan.version}</version>
+		 </dependency>
+		 
+		 <dependency>
+		     <groupId>com.weibo</groupId>
+		     <artifactId>motan-springsupport</artifactId>
+		     <version>${motan.version}</version>
+		 </dependency>
+		 
+		 <dependency>
+		     <groupId>com.weibo</groupId>
+		     <artifactId>motan-registry-zookeeper</artifactId>
+		     <version>${motan.version}</version>
+		 </dependency>
     </dependencies>
 
 
