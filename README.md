@@ -1,5 +1,5 @@
 # spring boot motan
-[![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/fallsea/spring-boot-starter-motan/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/fallsea/spring-boot-starter-motan.svg?style=social&label=Stars)](https://github.com/fallsea/spring-boot-starter-motan)
 [![GitHub forks](https://img.shields.io/github/forks/fallsea/spring-boot-starter-motan.svg?style=social&label=Fork)](https://github.com/fallsea/spring-boot-starter-motan)
 
@@ -49,7 +49,7 @@ fallsea :
 
 # 客户端
 > 启动类  MotanClientWeb  
-客户端测试地址：http://localhost:8080/hello/fallsea
+客户端测试地址：http://localhost:8080/hello/fallsea  
 > 配置说明，详细配置请参考[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
 
 ```
