@@ -7,6 +7,16 @@
 > motan基于spring boot 整合demo，motan配置信息存放在application.yml中，详细配置请参考[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
 > 此demo基于zookeeper 注册中心，如果要直接启动，需要安装zookeeper，也可以使用其他注册中心
 
+# 项目结构
+``` lua
+spring-boot-starter-motan
+├── fallsea-motan-client -- 客户端通用配置
+├── fallsea-motan-server -- 服务端通用配置
+├── fallsea-motan-demo -- demo 示例
+|    ├── fallsea-motan-api-demo -- api 示例
+|    ├── fallsea-motan-client-demo -- 客户端调用示例
+|    ├── fallsea-motan-server-demo -- 服务端示例
+```
 
 # 服务端
 > 启动类 MotanServer  
