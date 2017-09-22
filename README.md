@@ -1,12 +1,15 @@
-# spring boot motan 使用示例
-> motan基于spring boot 整合demo，motan配置信息存放在application.yml中，详细配置请参考[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
+# spring boot motan
+[![License](https://img.shields.io/badge/license-Apache2.0-blue.svg)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/fallsea/spring-boot-starter-motan.svg?style=social&label=Stars)](https://github.com/fallsea/spring-boot-starter-motan)
+[![GitHub forks](https://img.shields.io/github/forks/fallsea/spring-boot-starter-motan.svg?style=social&label=Fork)](https://github.com/fallsea/spring-boot-starter-motan)
 
+# 项目介绍
+> motan基于spring boot 整合demo，motan配置信息存放在application.yml中，详细配置请参考[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
 > 此demo基于zookeeper 注册中心，如果要直接启动，需要安装zookeeper，也可以使用其他注册中心
 
 
 # 服务端
-> 启动类  MotanServer
-
+> 启动类 MotanServer  
 > 配置说明
 
 ```
@@ -24,6 +27,9 @@ fallsea :
             minWorkerThread : 20 #最小工作pool线程数
             maxWorkerThread : 50 #最大工作pool线程数
             filter : statistic
+        #指定需要解析的包名
+        annotation :
+            package : com.fallsea.demo
         #服务端配置
         server : 
             export :  'fallseaMotan:9999' #服务端口
@@ -51,6 +57,9 @@ fallsea :
             minWorkerThread : 20 #最小工作pool线程数
             maxWorkerThread : 50 #最大工作pool线程数
             filter : statistic
+        #指定需要解析的包名
+        annotation :
+            package : com.fallsea.demo
         #客户端配置
         client : 
             protocol : fallseaMotan
