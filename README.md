@@ -20,7 +20,7 @@ spring-boot-starter-motan
 
 # 服务端
 > 启动类 MotanServer  
-> 配置说明
+> 配置说明，详细配置请参考[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
 
 ```
 fallsea : 
@@ -50,7 +50,7 @@ fallsea :
 # 客户端
 > 启动类  MotanClientWeb  
 客户端测试地址：http://localhost:8080/hello/fallsea
-> 配置说明
+> 配置说明，详细配置请参考[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
 
 ```
 fallsea : 
