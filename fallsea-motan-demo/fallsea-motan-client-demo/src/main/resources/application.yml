@@ -20,6 +20,6 @@ fallsea :
             protocol : fallseaMotan
             group : fallsea
             check : false
-            requestTimeout : 3000 #请求超时时间(毫秒)
+            requestTimeout : 30000 #请求超时时间(毫秒)
             connectTimeout : 5000 #连接超时时间(毫秒)
             registry : fallseaRegistryConfig

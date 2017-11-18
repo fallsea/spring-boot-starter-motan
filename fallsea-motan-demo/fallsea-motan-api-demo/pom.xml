@@ -2,26 +2,50 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fallsea</groupId>
   <artifactId>fallsea-motan-api-demo</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
   
    <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.7.RELEASE</version>
+        <version>1.5.8.RELEASE</version>
     </parent>
     
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
+		<motan.version>1.0.0</motan.version>
 	</properties>
 
     <dependencies>
+    	<dependency>
+		     <groupId>com.weibo</groupId>
+		     <artifactId>motan-core</artifactId>
+		     <version>${motan.version}</version>
+		 </dependency>
+		 <dependency>
+		     <groupId>com.weibo</groupId>
+		     <artifactId>motan-transport-netty</artifactId>
+		     <version>${motan.version}</version>
+		 </dependency>
+		 
+		 <dependency>
+		     <groupId>com.weibo</groupId>
+		     <artifactId>motan-springsupport</artifactId>
+		     <version>${motan.version}</version>
+		 </dependency>
+		 
+		 <dependency>
+		     <groupId>com.weibo</groupId>
+		     <artifactId>motan-registry-zookeeper</artifactId>
+		     <version>${motan.version}</version>
+		 </dependency>
     </dependencies>
 
 
     <build>
         <plugins>
+			<!-- 生成HTML文件插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
@@ -39,6 +63,7 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<!-- 资源文件管理插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -46,6 +71,7 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<!-- 测试插件(surefire) -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -55,6 +81,7 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			<!-- 生成源码插件 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>

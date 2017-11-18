@@ -7,20 +7,19 @@ import org.springframework.context.annotation.Configuration;
 import com.weibo.api.motan.config.springsupport.BasicRefererConfigBean;
 
 /**
- * @描述: motan client配置
- * @版权: Copyright (c) 2017
- * @作者: fallsea.com
- * @版本: 1.0
- * @创建日期: 2017年9月19日
- * @创建时间: 下午3:21:15
+ * @Description: motan client配置
+ * @Copyright: 2017 www.fallsea.com Inc. All rights reserved.
+ * @author: fallsea
+ * @version 1.0
+ * @date: 2017年11月18日 下午3:20:25
  */
 @Configuration
 public class MotanClientConfig
 {
     /**
-     * @描述: 客户端配置
-     * @作者: fallsea.com
-     * @时间: 2017年9月17日 下午6:32:42
+     * @Description: 客户端配置
+     * @author: fallsea
+     * @date: 2017年11月18日 下午3:20:38
      * @return
      */
     @Bean(name = "fallseaClientBasicConfig")

@@ -9,20 +9,19 @@ import com.weibo.api.motan.config.springsupport.ProtocolConfigBean;
 import com.weibo.api.motan.config.springsupport.RegistryConfigBean;
 
 /**
- * @描述: motan通用配置
- * @版权: Copyright (c) 2017
- * @作者: fallsea.com
- * @版本: 1.0
- * @创建日期: 2017年9月19日
- * @创建时间: 下午3:19:34
+ * @Description: motan通用配置
+ * @Copyright: 2017 www.fallsea.com Inc. All rights reserved.
+ * @author: fallsea
+ * @version 1.0
+ * @date: 2017年11月18日 下午3:20:48
  */
 @Configuration
 public class MotanConfig
 {
     /**
-     * @描述: 声明Annotation用来指定需要解析的包名
-     * @作者: fallsea.com
-     * @时间: 2017年9月15日 下午9:29:54
+     * @Description: 声明Annotation用来指定需要解析的包名
+     * @author: fallsea
+     * @date: 2017年11月18日 下午3:20:54
      * @return
      */
     @Bean
@@ -33,9 +32,9 @@ public class MotanConfig
     }
     
     /**
-     * @描述: 协议配置
-     * @作者: fallsea.com
-     * @时间: 2017年9月17日 下午6:13:31
+     * @Description: 协议配置
+     * @author: fallsea
+     * @date: 2017年11月18日 下午3:20:59
      * @return
      */
     @Bean(name = "fallseaMotan")
@@ -46,9 +45,9 @@ public class MotanConfig
     }
 
     /**
-     * @描述: 注册中心配置
-     * @作者: fallsea.com
-     * @时间: 2017年9月17日 下午6:13:41
+     * @Description: 注册中心配置
+     * @author: fallsea
+     * @date: 2017年11月18日 下午3:21:04
      * @return
      */
     @Bean(name = "fallseaRegistryConfig")

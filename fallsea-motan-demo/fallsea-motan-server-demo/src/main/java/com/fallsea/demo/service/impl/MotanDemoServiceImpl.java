@@ -1,15 +1,17 @@
 package com.fallsea.demo.service.impl;
 
+import java.math.BigDecimal;
+
+import com.fallsea.demo.pojo.Demo;
 import com.fallsea.demo.service.MotanDemoService;
 import com.weibo.api.motan.config.springsupport.annotation.MotanService;
 
 /**
- * @描述: 
- * @版权: Copyright (c) 2017
- * @作者: fallsea.com
- * @版本: 1.0
- * @创建日期: 2017年9月19日
- * @创建时间: 下午3:17:48
+ * @Description: 测试服务类
+ * @Copyright: 2017 www.fallsea.com Inc. All rights reserved.
+ * @author: fallsea
+ * @version 1.0
+ * @date: 2017年11月18日 下午3:24:29
  */
 @MotanService
 public class MotanDemoServiceImpl implements MotanDemoService
@@ -18,7 +20,24 @@ public class MotanDemoServiceImpl implements MotanDemoService
     @Override
     public String hello(String name)
     {
+        System.err.println("开始进入---------------"+name);
+        try
+        {
+            Thread.sleep(5000);
+        }
+        catch (Exception e)
+        {
+            // TODO: handle exception
+        }
         return "Hello " + name + "!";
     }
-    
+
+    @Override
+    public Demo test()
+    {
+        Demo demo = new Demo();
+        demo.setId(new BigDecimal(10000));
+        demo.setName("fallsea");
+        return demo;
+    }
 }

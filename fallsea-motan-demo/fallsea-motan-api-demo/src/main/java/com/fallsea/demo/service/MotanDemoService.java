@@ -1,16 +1,22 @@
 package com.fallsea.demo.service;
 
+import com.fallsea.demo.pojo.Demo;
+import com.weibo.api.motan.transport.async.MotanAsync;
+
 /**
- * @描述: 测试接口
- * @版权: Copyright (c) 2017
- * @作者: fallsea.com
- * @版本: 1.0
- * @创建日期: 2017年9月19日
- * @创建时间: 下午2:52:44
+ * @Description: 测试接口
+ * @Copyright: 2017 www.fallsea.com Inc. All rights reserved.
+ * @author: fallsea
+ * @version 1.0
+ * @date: 2017年11月18日 下午3:19:22
  */
-public interface MotanDemoService 
+@MotanAsync
+public  interface MotanDemoService 
 {
     
     String hello(String name);
+    
+    
+    Demo test();
     
 }
