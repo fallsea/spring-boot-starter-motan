@@ -1,6 +1,8 @@
 # spring boot motan
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/fallsea/spring-boot-starter-motan/blob/master/LICENSE)
 
+ [GitHub下载](https://github.com/fallsea/spring-boot-starter-motan)   
+ [码云下载](https://gitee.com/fallsea/spring-boot-starter-motan)  
 
 ## 项目介绍
 > 基于spring boot motan 整合demo（**支持异步和同步调用**），motan配置信息存放在application.yml中，详细配置请参考官网[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
@@ -18,6 +20,7 @@ spring-boot-starter-motan
 ```
 
 ## 服务端
+
 > 启动类 MotanServer  
 > 配置说明，详细配置请参考官网[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
 
@@ -47,6 +50,7 @@ fallsea :
 ```
 
 ## 客户端
+
 > 启动类  MotanClientWeb  
 客户端测试地址：http://localhost:8080/hello/fallsea  
 > 配置说明，详细配置请参考[配置清单](https://github.com/weibocom/motan/wiki/zh_configuration)
